@@ -8,7 +8,8 @@
 #### Instructions
 # **How to capture and anonymize network data**
 1. Capturing data: Use `tcpdump` [guide](http://inst.eecs.berkeley.edu/~ee122/fa06/projects/tcpdump-6up.pdf)
-2. Install TCPurify. Type `brew install tcpurify.rb`, as the original is deleted.
+2. Install TCPurify. Type `brew install tcpurify.rb`, as the original is deleted. `tcpurify.rb` is
+in `/setup`
 3. Generate the data - `sudo tcpdump -w 0001.pcap -i eth0`. To customize this, check out the above guide.
 4. Now, we want to anonymize `0001.pcap`. Use `tcpurify -t -f 0001.pcap none > out`. Be sure to not `cat` out. The
 binary may make your terminal freeze. If you want to investigate, use `xxd out`.
