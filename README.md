@@ -1,15 +1,23 @@
 
-## Notes
-#### Bro
-##### Useful links:
+# Notes
+### Bro
+#### Useful links:
 * Bro Infographic: http://gauss.ececs.uc.edu/Courses/c5155/pdf/bro_log_vars.pdf
 * [Instructions on how to run bro](https://www.bro.org/sphinx/quickstart/#reading-packet-capture-pcap-files)
 
-##### Instructions
-* Get pcap data; run `bro -r <packetfile>`
-* This will create `*.log` files. 
+#### Instructions
+# **How to capture and anonymize network data**
+1. Capturing data: Use `tcpdump` [guide](http://inst.eecs.berkeley.edu/~ee122/fa06/projects/tcpdump-6up.pdf)
+2. Install TCPurify. Type `brew install tcpurify.rb`, as the original is deleted.
+3. Generate the data - `sudo tcpdump -w 0001.pcap -i eth0`. To customize this, check out the above guide.
+4. Now, we want to anonymize `0001.pcap`. Use `tcpurify -t -f 0001.pcap none > out`. Be sure to not `cat` out. The
+binary may make your terminal freeze. If you want to investigate, use `xxd out`.
+5. Make two directories $orig, $anon - one for each of the instances we want to analyze. Move our
+files correspondingly.
+6. Use `bro -r <filename>` where `<filename>` can be `0001.pcap` or `out`. This will create `*.log` files. 
+7. Compare the output files.
 
-##### General information
+#### General information
 * Bro can be installed with `brew install bro`
 * It is an IDS - intrusion detection system.
 * It can take live packets or packet dumps (pcap = packet capture)
@@ -18,19 +26,23 @@ infographic.
 * The difference between bro and snort is that snort uses pattern detection; bro uses
 far more. 
 
-#### Anonymization
-* TCPurify
-* IPsumdump
+### Anonymization
+* TCPurify - (works)
+* IPsumdump - (can't figure out how to use this with pcap files currently)
 
-#### Separating network data to TCP, UDP, ICMP:
+
+# Other links:
+[Tutorial 1](https://www.inet.tu-berlin.de/fileadmin/fg234_teaching/SS13/IM_SS13/im13_02_appmix_intro.pdf)
+
+### Separating network data to TCP, UDP, ICMP:
 * Wireshark
 * tShark
 
-#### Network Datasets
+### Network Datasets
 * LBL: http://www.icir.org/enterprise-tracing/links.html
 * Davis
 
-#### Information from Somdutta:
+### Information from Somdutta:
 I used LBNL data available on their site and UCD network data. Go to "Download traces" in this link, http://www.icir.org/enterprise-tracing/Overview.html. This data set had been anonymized before they were posted online. They used tcpmkpub to anonymize the posted data. Click on "Papers"  to access the paper, "The Devil and Packet Trace Anonymization".
 
 The anonymization tools that I used are TCPurify ( https://web.archive.org/web/20140203210616/irg.cs.ohiou.edu/~eblanton/tcpurify/ ) and IPsumdump ( http://read.seas.harvard.edu/~kohler/ipsumdump/ ). The README file of TCPurify talks about anonymizing network data two ways. I have used the "nullify" option. I think another student had found that the "table" version has bugs in it.
