@@ -1,0 +1,11 @@
+   58   1.921546 168.150.105.141 → 168.150.111.255 BJNP 58 Scanner Command: Discover
+   59   1.921752 168.150.105.141 → 224.0.0.1    BJNP 58 Scanner Command: Discover
+  101   3.968442 168.150.105.141 → 8.8.8.8      DNS 74 Standard query 0x21cd A www.google.com
+  102   3.975804      8.8.8.8 → 168.150.105.141 DNS 90 Standard query response 0x21cd A www.google.com A 216.58.195.228
+  129   4.595366 168.150.105.141 → 8.8.8.8      DNS 82 Standard query 0xd8fd A block-edge.dropbox.com
+  130   4.595690 168.150.105.141 → 8.8.8.8      DNS 82 Standard query 0x7fff AAAA block-edge.dropbox.com
+  132   4.648078      8.8.8.8 → 168.150.105.141 DNS 164 Standard query response 0x7fff AAAA block-edge.dropbox.com CNAME edge-block-client.dualstack.dropbox-dns.com AAAA 2620:100:601a:4::a27d:704
+  133   4.691046      8.8.8.8 → 168.150.105.141 DNS 152 Standard query response 0xd8fd A block-edge.dropbox.com CNAME edge-block-client.dualstack.dropbox-dns.com A 162.125.2.4
+  134   4.691074 168.150.105.141 → 8.8.8.8      ICMP 70 Destination unreachable (Port unreachable)
+  160   5.050250 168.150.105.141 → 8.8.8.8      DNS 103 Standard query 0x3195 A edge-block-client.dualstack.dropbox-dns.com
+  161   5.088734      8.8.8.8 → 168.150.105.141 DNS 119 Standard query response 0x3195 A edge-block-client.dualstack.dropbox-dns.com A 162.125.7.4

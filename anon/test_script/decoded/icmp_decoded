@@ -1,0 +1,9 @@
+  103   3.976196 168.150.105.141 → 216.58.195.228 ICMP 98 Echo (ping) request  id=0x9025, seq=0/0, ttl=64
+  104   3.982353 216.58.195.228 → 168.150.105.141 ICMP 98 Echo (ping) reply    id=0x9025, seq=0/0, ttl=57 (request in 103)
+  134   4.691074 168.150.105.141 → 8.8.8.8      ICMP 70 Destination unreachable (Port unreachable)
+  149   4.977527 168.150.105.141 → 216.58.195.228 ICMP 98 Echo (ping) request  id=0x9025, seq=1/256, ttl=64
+  150   4.983202 216.58.195.228 → 168.150.105.141 ICMP 98 Echo (ping) reply    id=0x9025, seq=1/256, ttl=57 (request in 149)
+  212   5.979875 168.150.105.141 → 216.58.195.228 ICMP 98 Echo (ping) request  id=0x9025, seq=2/512, ttl=64
+  233   6.020041 216.58.195.228 → 168.150.105.141 ICMP 98 Echo (ping) reply    id=0x9025, seq=2/512, ttl=57 (request in 212)
+  253   6.980990 168.150.105.141 → 216.58.195.228 ICMP 98 Echo (ping) request  id=0x9025, seq=3/768, ttl=64
+  254   6.988355 216.58.195.228 → 168.150.105.141 ICMP 98 Echo (ping) reply    id=0x9025, seq=3/768, ttl=57 (request in 253)
