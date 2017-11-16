@@ -1,0 +1,10 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	ssl
+#open	2017-11-16-01-45-25
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	version	cipher	curve	server_name	resumed	last_alert	next_protocol	established	cert_chain_fuids	client_cert_chain_fuids	subject	issuer	client_subject	client_issuer
+#types	time	string	addr	port	addr	port	string	string	string	string	bool	string	string	bool	vector[string]	vector[string]	string	string	string	string
+1510086018.390038	Ct2sPE1KO8expaLsPa	168.150.105.141	55575	162.125.7.4	443	TLSv12	TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	secp256r1	block-edge.dropbox.com	F	-	-	T	F84OZl1CT8fv5PoeV9,Fa9SkB36atp7Y2KsK4,F7juPN2g5zVFlMeOW8	(empty)	CN=*.dropbox.com,OU=Domain Control Validated	CN=Go Daddy Secure Certificate Authority - G2,OU=http://certs.godaddy.com/repository/,O=GoDaddy.com\\, Inc.,L=Scottsdale,ST=Arizona,C=US	-	-
+#close	2017-11-16-01-45-25

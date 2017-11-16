@@ -1,0 +1,12 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	x509
+#open	2017-11-16-01-45-25
+#fields	ts	id	certificate.version	certificate.serial	certificate.subject	certificate.issuer	certificate.not_valid_before	certificate.not_valid_after	certificate.key_alg	certificate.sig_alg	certificate.key_type	certificate.key_length	certificate.exponent	certificate.curve	san.dns	san.uri	san.email	san.ip	basic_constraints.ca	basic_constraints.path_len
+#types	time	string	count	string	string	string	time	time	string	string	string	count	string	string	vector[string]	vector[string]	vector[string]	vector[addr]	bool	count
+1510086018.398225	F84OZl1CT8fv5PoeV9	3	503ED98AB4E33116	CN=*.dropbox.com,OU=Domain Control Validated	CN=Go Daddy Secure Certificate Authority - G2,OU=http://certs.godaddy.com/repository/,O=GoDaddy.com\\, Inc.,L=Scottsdale,ST=Arizona,C=US	1478667218.000000	1512985786.000000	rsaEncryption	sha256WithRSAEncryption	rsa	2048	65537	-	*.dropbox.com,dropbox.com	-	-	-	F	-
+1510086018.398225	Fa9SkB36atp7Y2KsK4	3	07	CN=Go Daddy Secure Certificate Authority - G2,OU=http://certs.godaddy.com/repository/,O=GoDaddy.com\\, Inc.,L=Scottsdale,ST=Arizona,C=US	CN=Go Daddy Root Certificate Authority - G2,O=GoDaddy.com\\, Inc.,L=Scottsdale,ST=Arizona,C=US	1304431200.000000	1935583200.000000	rsaEncryption	sha256WithRSAEncryption	rsa	2048	65537	-	-	-	-	-	T	-
+1510086018.398225	F7juPN2g5zVFlMeOW8	3	1BE715	CN=Go Daddy Root Certificate Authority - G2,O=GoDaddy.com\\, Inc.,L=Scottsdale,ST=Arizona,C=US	OU=Go Daddy Class 2 Certification Authority,O=The Go Daddy Group\\, Inc.,C=US	1388588400.000000	1937916000.000000	rsaEncryption	sha256WithRSAEncryption	rsa	2048	65537	-	-	-	-	-	T	-
+#close	2017-11-16-01-45-25

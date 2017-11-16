@@ -1,0 +1,18 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	conn
+#open	2017-11-16-01-45-25
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	service	duration	orig_bytes	resp_bytes	conn_state	local_orig	local_resp	missed_bytes	history	orig_pkts	orig_ip_bytes	resp_pkts	resp_ip_bytes	tunnel_parents
+#types	time	string	addr	port	addr	port	enum	string	interval	count	count	string	bool	bool	count	string	count	count	count	count	set[string]
+1510086013.292740	CSy8mat31mfF22tui	168.150.105.141	55455	216.58.195.238	443	tcp	-	0.132450	1704	1898	OTH	-	-	0	DadA	8	2120	8	2314	(empty)
+1510086018.383480	Ct2sPE1KO8expaLsPa	168.150.105.141	55575	162.125.7.4	443	tcp	ssl	0.348679	20708	4931	S1	-	-	0	ShADad	25	23179	17	5835	(empty)
+1510086016.164232	CVRACT36fefVT4DDp7	168.150.105.141	55472	52.10.249.124	80	tcp	-	0.028140	0	0	SF	-	-	0	FfA	2	104	1	52	(empty)
+1510086014.612187	CZqu8f1UR02alCp3L	168.150.105.141	55571	74.125.197.189	443	tcp	-	4.832302	8141	5687	OTH	-	-	0	DadA	49	10689	45	8027	(empty)
+1510086017.196627	CN6wnB4MhTiwKDWJN7	168.150.105.141	55459	172.217.5.110	443	tcp	-	1.124583	3910	2534	OTH	-	-	0	DadA	25	5210	23	3730	(empty)
+1510086019.615022	C2pzLb4OfNGFWEsvN3	168.150.105.141	55090	162.125.34.129	443	tcp	-	0.464301	713	520	OTH	-	-	0	^dADa	2	817	2	624	(empty)
+1510086016.164794	CZIO9PYiJF4wc7Qac	168.150.105.141	55556	52.0.157.237	443	tcp	-	0.080222	0	0	SH	-	-	0	Fa	1	52	1	52	(empty)
+1510086017.531630	CkvoR552JArtiKV87	168.150.105.141	55542	162.125.7.3	443	tcp	-	2.446007	4100	5528	OTH	-	-	0	DadA	11	5266	11	6112	(empty)
+1510086017.882237	CgHyI04vvuEsFS2Br5	168.150.105.141	55415	162.125.2.4	443	tcp	-	0.019175	0	0	RSTR	-	-	0	Fr	1	52	1	40	(empty)
+#close	2017-11-16-01-45-25
