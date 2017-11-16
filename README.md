@@ -24,10 +24,10 @@ files correspondingly.
 `tshark -G protocols | grep <protocol name>`
 The abbreviations we are interested in: tcp, udp, icmp
 3. Run tshark on pcap file specifying which protocol we want to filter out using display filter (-Y). Save raw data (pcap) and decoded data.
-`tshark -r <pcap file name> -Y <protocol abbreviation> -w <name of output file to save raw data>`
-`tshark -r <pcap file name> -Y <protocol abbreviation> > <name of output file to save decoded data>`
+-`tshark -r <pcap file name> -Y <protocol abbreviation> -w <name of output file to save raw data>`
+-`tshark -r <pcap file name> -Y <protocol abbreviation> > <name of output file to save decoded data>`
 
-# **Explanation of Scripts:
+# **Explanation of Scripts:**
 * NOTE: Remember to run `chmod +x <script name>` before running the script.
 * get_data.sh: Downloads all trace files from the LBNL website. Run this script in the directory where you want to save all the trace files. Run as follows: `./get_data.sh`
 * sep_data.sh: Separates trace file into tcp, udp, and icmp datasets. Saves resulting 3 raw pcap files in a new directory called "raw" and the decoded version of the files in a new directory called "decoded". Run as follows: `./sep_data.sh <pcap file name>`
