@@ -24,8 +24,8 @@ files correspondingly.
 `tshark -G protocols | grep <protocol name>`
 The abbreviations we are interested in: tcp, udp, icmp
 3. Run tshark on pcap file specifying which protocol we want to filter out using display filter (-Y). Save raw data (pcap) and decoded data.
--`tshark -r <pcap file name> -Y <protocol abbreviation> -w <name of output file to save raw data>`
--`tshark -r <pcap file name> -Y <protocol abbreviation> > <name of output file to save decoded data>`
+	1. `tshark -r <pcap file name> -Y <protocol abbreviation> -w <name of output file to save raw data>`
+	2. `tshark -r <pcap file name> -Y <protocol abbreviation> > <name of output file to save decoded data>`
 
 # **Explanation of Scripts:**
 * NOTE: Remember to run `chmod +x <script name>` before running the script.
